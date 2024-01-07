@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Books</h1>
+    <ul>
+        {% for index, book in recommendations.iterrows() %}
+            <li>{{ book['original_title'] }} by {{ book['authors'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
